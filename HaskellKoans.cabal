@@ -59,7 +59,7 @@ Cabal-version:       >=1.18
 --    test-framework-hunit
 
 test-suite koans
-  type: exitcode-stdio-1.0
+  Type: exitcode-stdio-1.0
   -- .hs or .lhs file containing the Main module.
   Main-is:
     TestSuite.hs
@@ -73,35 +73,6 @@ test-suite koans
     mtl,
     hspec,
     text
-
-  HS-source-dirs:
-    test
-
-  Default-language:
-    Haskell2010
-
-  -- GHC-options: -Wall
-  -- Modules not exported by this package.
-  -- Other-modules:
-
-  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
-  -- Build-tools:
-
-Executable testloop
-  -- .hs or .lhs file containing the Main module.
-  Main-is:
-    TestLoop.hs
-
-  -- Packages needed in order to build this package.
-  Build-depends:
-    base            >= 4.5,
-    attoparsec,
-    containers,
-    HUnit,
-    mtl,
-    hspec,
-    text,
-    testloop
 
   HS-source-dirs:
     test
